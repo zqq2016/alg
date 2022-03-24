@@ -1,1 +1,90 @@
-<mxfile host="app.diagrams.net" modified="2022-03-24T13:50:18.056Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" version="17.2.0" etag="fB87jH1UbdcGmv97vcNZ" type="github"><diagram id="ZPi6PnsJlYef4sc59RtU">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-03-24T14:01:41.141Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" etag="G_gou6PXAlbfDgzWOykv" version="17.2.0" type="github">
+  <diagram id="ZPi6PnsJlYef4sc59RtU" name="Page-1">
+    <mxGraphModel dx="1209" dy="685" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qCND2gYvkLu-E-dVGQEu-2" value="comm_task" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="600" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="qCND2gYvkLu-E-dVGQEu-22" value="读取缓冲" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="qCND2gYvkLu-E-dVGQEu-2">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="141" as="sourcePoint" />
+            <mxPoint x="189.5" y="141" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCND2gYvkLu-E-dVGQEu-3" value="sample_task" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="600" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="qCND2gYvkLu-E-dVGQEu-17" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="qCND2gYvkLu-E-dVGQEu-3">
+          <mxGeometry x="45" y="90" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qCND2gYvkLu-E-dVGQEu-18" value="self call" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="qCND2gYvkLu-E-dVGQEu-17" parent="qCND2gYvkLu-E-dVGQEu-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="70" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="75" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCND2gYvkLu-E-dVGQEu-4" value="lcd_task" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="600" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="qCND2gYvkLu-E-dVGQEu-6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="qCND2gYvkLu-E-dVGQEu-4">
+          <mxGeometry x="45" y="170" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qCND2gYvkLu-E-dVGQEu-7" value="self call" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="qCND2gYvkLu-E-dVGQEu-6" parent="qCND2gYvkLu-E-dVGQEu-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="140" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="80" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCND2gYvkLu-E-dVGQEu-8" value="更新显示" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="qCND2gYvkLu-E-dVGQEu-4" target="qCND2gYvkLu-E-dVGQEu-5">
+          <mxGeometry x="0.0898" y="10" width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="190" as="sourcePoint" />
+            <mxPoint x="130" y="190" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCND2gYvkLu-E-dVGQEu-5" value="串口屏" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="766" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qCND2gYvkLu-E-dVGQEu-19" value="更新缓冲" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1" target="qCND2gYvkLu-E-dVGQEu-4">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="390" y="710" as="sourcePoint" />
+            <mxPoint x="470" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCND2gYvkLu-E-dVGQEu-20" value="主应用" style="html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="730" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qCND2gYvkLu-E-dVGQEu-21" value="读取温度" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="140" y="733" as="sourcePoint" />
+            <mxPoint x="249.5" y="733" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCND2gYvkLu-E-dVGQEu-23" value="返回温度值" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="-0.0005" relative="1" as="geometry">
+            <mxPoint x="390" y="762" as="sourcePoint" />
+            <mxPoint x="249.92857142857144" y="762" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCND2gYvkLu-E-dVGQEu-25" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="773" as="sourcePoint" />
+            <mxPoint x="140" y="773" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qCND2gYvkLu-E-dVGQEu-26" value="实际温度" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qCND2gYvkLu-E-dVGQEu-25">
+          <mxGeometry x="0.2684" y="-3" relative="1" as="geometry">
+            <mxPoint x="10" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
